@@ -1,0 +1,607 @@
+{
+ "results": {
+  "tune_v1": {
+   "n": 150,
+   "same": 129,
+   "kappa": 0.839
+  },
+  "tune_v2": {
+   "n": 150,
+   "same": 131,
+   "kappa": 0.8544
+  },
+  "holdout_pairs": {
+   "llm1_vs_final": {
+    "same": 45,
+    "kappa": 0.8822
+   },
+   "llm2_vs_final": {
+    "same": 45,
+    "kappa": 0.8822
+   },
+   "coder_b_vs_coder_c": {
+    "same": 36,
+    "kappa": 0.6714
+   },
+   "coder_b_vs_final": {
+    "same": 47,
+    "kappa": 0.929
+   },
+   "coder_c_vs_final": {
+    "same": 37,
+    "kappa": 0.6963
+   },
+   "llm1_vs_coder_b": {
+    "same": 47,
+    "kappa": 0.9289
+   },
+   "llm1_vs_coder_c": {
+    "same": 39,
+    "kappa": 0.7418
+   }
+  },
+  "holdout_misses": [
+   {
+    "sample_id": "BK-A291",
+    "final": "D11",
+    "llm1": "D5",
+    "llm2": "D5",
+    "coder_b": "D5",
+    "coder_c": "D7"
+   },
+   {
+    "sample_id": "RK-A347",
+    "final": "D6",
+    "llm1": "D12",
+    "llm2": "D12",
+    "coder_b": "D12",
+    "coder_c": "D6"
+   },
+   {
+    "sample_id": "UP-A060",
+    "final": "D4",
+    "llm1": "D1",
+    "llm2": "D1",
+    "coder_b": "D12",
+    "coder_c": "D1"
+   },
+   {
+    "sample_id": "UP-A068",
+    "final": "D4",
+    "llm1": "D11",
+    "llm2": "D11",
+    "coder_b": "D4",
+    "coder_c": "D11"
+   },
+   {
+    "sample_id": "UP-A091",
+    "final": "D12",
+    "llm1": "D1",
+    "llm2": "D1",
+    "coder_b": "D12",
+    "coder_c": "D1"
+   }
+  ],
+  "holdout_design_vs_nondesign_same": 50,
+  "run_to_run": {
+   "primary_same": 50,
+   "severity_same": 48,
+   "n": 50
+  },
+  "holdout_severity": {
+   "n": 34,
+   "same": 31,
+   "weighted_kappa": 0.7594
+  },
+  "holdout_kappa_bootstrap_ci95": {
+   "resamples": 10000,
+   "seed": 20261020,
+   "ci": [
+    0.77,
+    0.98
+   ]
+  },
+  "spotcheck_independent": {
+   "spotcheck": {
+    "n": 160,
+    "primary_N_coder_b": 3,
+    "primary_N_coder_c": 12,
+    "primary_N_both": 0,
+    "primary_N_either": 15,
+    "primary_same_answer": 145,
+    "severity_answered_coder_b": 121,
+    "severity_answered_coder_c": 114,
+    "severity_N_coder_b": 1,
+    "severity_N_coder_c": 3
+   },
+   "targeted": {
+    "n": 43,
+    "primary_N_coder_b": 1,
+    "primary_N_coder_c": 1,
+    "primary_N_both": 0,
+    "primary_N_either": 2,
+    "primary_same_answer": 41,
+    "severity_answered_coder_b": 36,
+    "severity_answered_coder_c": 35,
+    "severity_N_coder_b": 2,
+    "severity_N_coder_c": 1
+   }
+  },
+  "spotcheck_final": {
+   "spotcheck": {
+    "n": 160,
+    "primary_errors": 9,
+    "primary_error_pct": 5.6,
+    "primary_error_ci95_wilson": [
+     3.0,
+     10.3
+    ],
+    "primary_error_ids": [
+     "UP-A216",
+     "BK-A211",
+     "RK-A435",
+     "NG-A283",
+     "BK-A395",
+     "RK-A359",
+     "RK-A167",
+     "RK-A137",
+     "NG-A053"
+    ],
+    "changes": {
+     "D1->N2": 2,
+     "D7->N5": 4,
+     "D12->N5": 1,
+     "D1->D4": 1,
+     "N2->D2": 1
+    },
+    "severity_rows": 113,
+    "severity_errors": 1,
+    "severity_error_ids": [
+     "NG-A039"
+    ],
+    "design_primary_llm": 121,
+    "design_primary_final": 115,
+    "errors_by_llm_code": {
+     "D1": [
+      6,
+      3
+     ],
+     "D12": [
+      14,
+      1
+     ],
+     "D7": [
+      23,
+      4
+     ],
+     "N2": [
+      10,
+      1
+     ]
+    }
+   },
+   "targeted": {
+    "n": 43,
+    "primary_errors": 1,
+    "primary_error_pct": 2.3,
+    "primary_error_ci95_wilson": [
+     0.4,
+     12.1
+    ],
+    "primary_error_ids": [
+     "NG-A079"
+    ],
+    "changes": {
+     "D9->N3": 1
+    },
+    "severity_rows": 35,
+    "severity_errors": 1,
+    "severity_error_ids": [
+     "NG-A397"
+    ],
+    "design_primary_llm": 36,
+    "design_primary_final": 35,
+    "errors_by_llm_code": {
+     "D9": [
+      29,
+      1
+     ]
+    }
+   }
+  },
+  "unsure_flag_split": {
+   "flagged": 47,
+   "errors_flagged": 8,
+   "not_flagged": 113,
+   "errors_not_flagged": 1
+  }
+ },
+ "checks": [
+  {
+   "check": "tune_v1 kappa",
+   "got": 0.839,
+   "expected": 0.839,
+   "pass": true
+  },
+  {
+   "check": "tune_v2 kappa",
+   "got": 0.854,
+   "expected": 0.854,
+   "pass": true
+  },
+  {
+   "check": "holdout_compare.csv llm1/llm2 match llm_gold_runs.csv",
+   "got": true,
+   "expected": true,
+   "pass": true
+  },
+  {
+   "check": "holdout_compare.csv final/coders match gold_labels.csv",
+   "got": true,
+   "expected": true,
+   "pass": true
+  },
+  {
+   "check": "LLM vs consensus, same",
+   "got": 45,
+   "expected": 45,
+   "pass": true
+  },
+  {
+   "check": "LLM vs consensus, kappa (log)",
+   "got": 0.8822,
+   "expected": 0.8822,
+   "pass": true
+  },
+  {
+   "check": "LLM vs consensus, kappa (paper)",
+   "got": 0.882,
+   "expected": 0.882,
+   "pass": true
+  },
+  {
+   "check": "LLM run 2 vs consensus, kappa",
+   "got": 0.882,
+   "expected": 0.882,
+   "pass": true
+  },
+  {
+   "check": "coder B vs coder C on the same 50, kappa",
+   "got": 0.671,
+   "expected": 0.671,
+   "pass": true
+  },
+  {
+   "check": "coder B vs consensus, kappa",
+   "got": 0.929,
+   "expected": 0.929,
+   "pass": true
+  },
+  {
+   "check": "coder C vs consensus, kappa",
+   "got": 0.696,
+   "expected": 0.696,
+   "pass": true
+  },
+  {
+   "check": "LLM vs coder B, kappa",
+   "got": 0.929,
+   "expected": 0.929,
+   "pass": true
+  },
+  {
+   "check": "LLM vs coder C, kappa",
+   "got": 0.742,
+   "expected": 0.742,
+   "pass": true
+  },
+  {
+   "check": "design vs non-design, same of 50",
+   "got": 50,
+   "expected": 50,
+   "pass": true
+  },
+  {
+   "check": "misses whose LLM code matches one coder",
+   "got": "5 of 5",
+   "expected": "5 of 5",
+   "pass": true
+  },
+  {
+   "check": "run-to-run, same primary",
+   "got": 50,
+   "expected": 50,
+   "pass": true
+  },
+  {
+   "check": "run-to-run, same severity",
+   "got": 48,
+   "expected": 48,
+   "pass": true
+  },
+  {
+   "check": "hold-out severity, same",
+   "got": "31/34",
+   "expected": "31/34",
+   "pass": true
+  },
+  {
+   "check": "hold-out severity, weighted kappa",
+   "got": 0.759,
+   "expected": 0.759,
+   "pass": true
+  },
+  {
+   "check": "hold-out kappa, bootstrap 95% CI",
+   "got": [
+    0.77,
+    0.98
+   ],
+   "expected": [
+    0.77,
+    0.98
+   ],
+   "pass": true
+  },
+  {
+   "check": "spotcheck: independent checks match log",
+   "got": {
+    "n": 160,
+    "primary_N_coder_b": 3,
+    "primary_N_coder_c": 12,
+    "primary_N_both": 0,
+    "primary_N_either": 15,
+    "primary_same_answer": 145,
+    "severity_answered_coder_b": 121,
+    "severity_answered_coder_c": 114,
+    "severity_N_coder_b": 1,
+    "severity_N_coder_c": 3
+   },
+   "expected": {
+    "n": 160,
+    "primary_N_coder_b": 3,
+    "primary_N_coder_c": 12,
+    "primary_N_both": 0,
+    "primary_N_either": 15,
+    "primary_same_answer": 145,
+    "severity_answered_coder_b": 121,
+    "severity_answered_coder_c": 114,
+    "severity_N_coder_b": 1,
+    "severity_N_coder_c": 3
+   },
+   "pass": true
+  },
+  {
+   "check": "spotcheck: settled error rates match log",
+   "got": {
+    "n": 160,
+    "primary_errors": 9,
+    "primary_error_pct": 5.6,
+    "primary_error_ci95_wilson": [
+     3.0,
+     10.3
+    ],
+    "primary_error_ids": [
+     "UP-A216",
+     "BK-A211",
+     "RK-A435",
+     "NG-A283",
+     "BK-A395",
+     "RK-A359",
+     "RK-A167",
+     "RK-A137",
+     "NG-A053"
+    ],
+    "changes": {
+     "D1->N2": 2,
+     "D7->N5": 4,
+     "D12->N5": 1,
+     "D1->D4": 1,
+     "N2->D2": 1
+    },
+    "severity_rows": 113,
+    "severity_errors": 1,
+    "severity_error_ids": [
+     "NG-A039"
+    ],
+    "design_primary_llm": 121,
+    "design_primary_final": 115,
+    "errors_by_llm_code": {
+     "D1": [
+      6,
+      3
+     ],
+     "D12": [
+      14,
+      1
+     ],
+     "D7": [
+      23,
+      4
+     ],
+     "N2": [
+      10,
+      1
+     ]
+    }
+   },
+   "expected": {
+    "n": 160,
+    "primary_errors": 9,
+    "primary_error_pct": 5.6,
+    "primary_error_ci95_wilson": [
+     3.0,
+     10.3
+    ],
+    "primary_error_ids": [
+     "UP-A216",
+     "BK-A211",
+     "RK-A435",
+     "NG-A283",
+     "BK-A395",
+     "RK-A359",
+     "RK-A167",
+     "RK-A137",
+     "NG-A053"
+    ],
+    "changes": {
+     "D1->N2": 2,
+     "D7->N5": 4,
+     "D12->N5": 1,
+     "D1->D4": 1,
+     "N2->D2": 1
+    },
+    "severity_rows": 113,
+    "severity_errors": 1,
+    "severity_error_ids": [
+     "NG-A039"
+    ],
+    "design_primary_llm": 121,
+    "design_primary_final": 115,
+    "errors_by_llm_code": {
+     "D1": [
+      6,
+      3
+     ],
+     "D12": [
+      14,
+      1
+     ],
+     "D7": [
+      23,
+      4
+     ],
+     "N2": [
+      10,
+      1
+     ]
+    }
+   },
+   "pass": true
+  },
+  {
+   "check": "unsure flag: errors among flagged",
+   "got": "8/47",
+   "expected": "8/47",
+   "pass": true
+  },
+  {
+   "check": "unsure flag: errors among not flagged",
+   "got": "1/113",
+   "expected": "1/113",
+   "pass": true
+  },
+  {
+   "check": "targeted: independent checks match log",
+   "got": {
+    "n": 43,
+    "primary_N_coder_b": 1,
+    "primary_N_coder_c": 1,
+    "primary_N_both": 0,
+    "primary_N_either": 2,
+    "primary_same_answer": 41,
+    "severity_answered_coder_b": 36,
+    "severity_answered_coder_c": 35,
+    "severity_N_coder_b": 2,
+    "severity_N_coder_c": 1
+   },
+   "expected": {
+    "n": 43,
+    "primary_N_coder_b": 1,
+    "primary_N_coder_c": 1,
+    "primary_N_both": 0,
+    "primary_N_either": 2,
+    "primary_same_answer": 41,
+    "severity_answered_coder_b": 36,
+    "severity_answered_coder_c": 35,
+    "severity_N_coder_b": 2,
+    "severity_N_coder_c": 1
+   },
+   "pass": true
+  },
+  {
+   "check": "targeted: settled error rates match log",
+   "got": {
+    "n": 43,
+    "primary_errors": 1,
+    "primary_error_pct": 2.3,
+    "primary_error_ci95_wilson": [
+     0.4,
+     12.1
+    ],
+    "primary_error_ids": [
+     "NG-A079"
+    ],
+    "changes": {
+     "D9->N3": 1
+    },
+    "severity_rows": 35,
+    "severity_errors": 1,
+    "severity_error_ids": [
+     "NG-A397"
+    ],
+    "design_primary_llm": 36,
+    "design_primary_final": 35,
+    "errors_by_llm_code": {
+     "D9": [
+      29,
+      1
+     ]
+    }
+   },
+   "expected": {
+    "n": 43,
+    "primary_errors": 1,
+    "primary_error_pct": 2.3,
+    "primary_error_ci95_wilson": [
+     0.4,
+     12.1
+    ],
+    "primary_error_ids": [
+     "NG-A079"
+    ],
+    "changes": {
+     "D9->N3": 1
+    },
+    "severity_rows": 35,
+    "severity_errors": 1,
+    "severity_error_ids": [
+     "NG-A397"
+    ],
+    "design_primary_llm": 36,
+    "design_primary_final": 35,
+    "errors_by_llm_code": {
+     "D9": [
+      29,
+      1
+     ]
+    }
+   },
+   "pass": true
+  },
+  {
+   "check": "spot-check random 160: error %",
+   "got": 5.6,
+   "expected": 5.6,
+   "pass": true
+  },
+  {
+   "check": "spot-check random 160: Wilson 95% CI",
+   "got": [
+    3.0,
+    10.3
+   ],
+   "expected": [
+    3.0,
+    10.3
+   ],
+   "pass": true
+  },
+  {
+   "check": "spot-check targeted 43: error %",
+   "got": 2.3,
+   "expected": 2.3,
+   "pass": true
+  }
+ ]
+}

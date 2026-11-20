@@ -1,0 +1,208 @@
+{
+  "computed_utc": "2026-11-06T20:36:02.509734+00:00",
+  "file": "data\\labels\\gold_labels.csv",
+  "columns": [
+    "coder_b_severity",
+    "coder_c_severity"
+  ],
+  "excluded": [
+    "BK-A001",
+    "BK-A013",
+    "BK-A015",
+    "BK-A026",
+    "BK-A034",
+    "BK-A063",
+    "BK-A078"
+  ],
+  "ordinal_order": [
+    "blocks",
+    "degrades",
+    "annoyance"
+  ],
+  "rows_total": 200,
+  "rows_used": 103,
+  "same_label": 70,
+  "observed_agreement": 0.7961,
+  "chance_agreement": 0.7285,
+  "kappa": 0.249,
+  "landis_koch_band": "fair",
+  "label_counts": {
+    "coder_b_severity": {
+      "blocks": 84,
+      "degrades": 13,
+      "annoyance": 6
+    },
+    "coder_c_severity": {
+      "blocks": 68,
+      "degrades": 25,
+      "annoyance": 10
+    }
+  },
+  "disagreements": [
+    {
+      "id": "BK-A021",
+      "coder_b_severity": "degrades",
+      "coder_c_severity": "blocks"
+    },
+    {
+      "id": "BK-A039",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "BK-A152",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "annoyance"
+    },
+    {
+      "id": "BK-A318",
+      "coder_b_severity": "degrades",
+      "coder_c_severity": "blocks"
+    },
+    {
+      "id": "BK-A349",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "BK-A382",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "annoyance"
+    },
+    {
+      "id": "BK-A397",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "NG-A042",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "NG-A076",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "NG-A109",
+      "coder_b_severity": "annoyance",
+      "coder_c_severity": "blocks"
+    },
+    {
+      "id": "NG-A158",
+      "coder_b_severity": "annoyance",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "NG-A178",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "NG-A194",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "NG-A257",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "NG-A366",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "NG-A393",
+      "coder_b_severity": "degrades",
+      "coder_c_severity": "blocks"
+    },
+    {
+      "id": "RK-A040",
+      "coder_b_severity": "degrades",
+      "coder_c_severity": "blocks"
+    },
+    {
+      "id": "RK-A096",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "RK-A138",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "RK-A158",
+      "coder_b_severity": "annoyance",
+      "coder_c_severity": "blocks"
+    },
+    {
+      "id": "RK-A198",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "RK-A210",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "RK-A228",
+      "coder_b_severity": "degrades",
+      "coder_c_severity": "blocks"
+    },
+    {
+      "id": "RK-A246",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "annoyance"
+    },
+    {
+      "id": "RK-A321",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "annoyance"
+    },
+    {
+      "id": "RK-A438",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "annoyance"
+    },
+    {
+      "id": "RK-A442",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "annoyance"
+    },
+    {
+      "id": "RK-A444",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "UP-A003",
+      "coder_b_severity": "degrades",
+      "coder_c_severity": "blocks"
+    },
+    {
+      "id": "UP-A065",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "UP-A152",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "annoyance"
+    },
+    {
+      "id": "UP-A178",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    },
+    {
+      "id": "UP-A238",
+      "coder_b_severity": "blocks",
+      "coder_c_severity": "degrades"
+    }
+  ]
+}

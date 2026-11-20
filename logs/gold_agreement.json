@@ -1,0 +1,342 @@
+{
+  "computed_utc": "2026-11-06T20:36:01.773369+00:00",
+  "file": "data\\labels\\gold_labels.csv",
+  "columns": [
+    "coder_b",
+    "coder_c"
+  ],
+  "excluded": [
+    "BK-A001",
+    "BK-A013",
+    "BK-A015",
+    "BK-A026",
+    "BK-A034",
+    "BK-A063",
+    "BK-A078"
+  ],
+  "ordinal_order": null,
+  "rows_total": 200,
+  "rows_used": 193,
+  "same_label": 137,
+  "observed_agreement": 0.7098,
+  "chance_agreement": 0.1344,
+  "kappa": 0.6648,
+  "landis_koch_band": "substantial",
+  "label_counts": {
+    "coder_b": {
+      "D2": 53,
+      "D5": 19,
+      "D8": 15,
+      "N4": 1,
+      "N5": 24,
+      "D1": 7,
+      "D12": 26,
+      "N1": 4,
+      "D11": 9,
+      "N2": 13,
+      "D7": 13,
+      "D3": 5,
+      "D4": 4
+    },
+    "coder_c": {
+      "D2": 53,
+      "D5": 17,
+      "D8": 11,
+      "N4": 2,
+      "D4": 4,
+      "D11": 14,
+      "D12": 22,
+      "N5": 20,
+      "N1": 3,
+      "N2": 17,
+      "D7": 17,
+      "D3": 2,
+      "D1": 7,
+      "D9": 1,
+      "D10": 2,
+      "D6": 1
+    }
+  },
+  "disagreements": [
+    {
+      "id": "BK-A091",
+      "coder_b": "N5",
+      "coder_c": "D2"
+    },
+    {
+      "id": "BK-A096",
+      "coder_b": "D1",
+      "coder_c": "D4"
+    },
+    {
+      "id": "BK-A114",
+      "coder_b": "D5",
+      "coder_c": "D2"
+    },
+    {
+      "id": "BK-A118",
+      "coder_b": "D8",
+      "coder_c": "D11"
+    },
+    {
+      "id": "BK-A152",
+      "coder_b": "D12",
+      "coder_c": "D8"
+    },
+    {
+      "id": "BK-A195",
+      "coder_b": "D11",
+      "coder_c": "D12"
+    },
+    {
+      "id": "BK-A259",
+      "coder_b": "D2",
+      "coder_c": "D7"
+    },
+    {
+      "id": "BK-A269",
+      "coder_b": "N5",
+      "coder_c": "D5"
+    },
+    {
+      "id": "BK-A291",
+      "coder_b": "D5",
+      "coder_c": "D7"
+    },
+    {
+      "id": "BK-A302",
+      "coder_b": "D8",
+      "coder_c": "D11"
+    },
+    {
+      "id": "BK-A357",
+      "coder_b": "N2",
+      "coder_c": "D4"
+    },
+    {
+      "id": "NG-A045",
+      "coder_b": "D5",
+      "coder_c": "N5"
+    },
+    {
+      "id": "NG-A159",
+      "coder_b": "N5",
+      "coder_c": "D7"
+    },
+    {
+      "id": "NG-A178",
+      "coder_b": "D8",
+      "coder_c": "D5"
+    },
+    {
+      "id": "NG-A183",
+      "coder_b": "D5",
+      "coder_c": "D2"
+    },
+    {
+      "id": "NG-A194",
+      "coder_b": "D2",
+      "coder_c": "D7"
+    },
+    {
+      "id": "NG-A201",
+      "coder_b": "D7",
+      "coder_c": "D4"
+    },
+    {
+      "id": "NG-A202",
+      "coder_b": "D4",
+      "coder_c": "D2"
+    },
+    {
+      "id": "NG-A205",
+      "coder_b": "D2",
+      "coder_c": "D5"
+    },
+    {
+      "id": "NG-A231",
+      "coder_b": "D5",
+      "coder_c": "D1"
+    },
+    {
+      "id": "NG-A234",
+      "coder_b": "D1",
+      "coder_c": "D7"
+    },
+    {
+      "id": "NG-A257",
+      "coder_b": "D7",
+      "coder_c": "D5"
+    },
+    {
+      "id": "NG-A293",
+      "coder_b": "N5",
+      "coder_c": "D11"
+    },
+    {
+      "id": "NG-A294",
+      "coder_b": "N5",
+      "coder_c": "D8"
+    },
+    {
+      "id": "NG-A366",
+      "coder_b": "D2",
+      "coder_c": "D7"
+    },
+    {
+      "id": "NG-A372",
+      "coder_b": "D7",
+      "coder_c": "N5"
+    },
+    {
+      "id": "NG-A387",
+      "coder_b": "N5",
+      "coder_c": "D5"
+    },
+    {
+      "id": "NG-A388",
+      "coder_b": "D5",
+      "coder_c": "D2"
+    },
+    {
+      "id": "NG-A389",
+      "coder_b": "D2",
+      "coder_c": "N4"
+    },
+    {
+      "id": "NG-A393",
+      "coder_b": "D7",
+      "coder_c": "D2"
+    },
+    {
+      "id": "NG-A419",
+      "coder_b": "D2",
+      "coder_c": "D1"
+    },
+    {
+      "id": "NG-A425",
+      "coder_b": "D1",
+      "coder_c": "N1"
+    },
+    {
+      "id": "NG-A432",
+      "coder_b": "N1",
+      "coder_c": "D2"
+    },
+    {
+      "id": "NG-A437",
+      "coder_b": "D2",
+      "coder_c": "N2"
+    },
+    {
+      "id": "NG-A438",
+      "coder_b": "D7",
+      "coder_c": "N2"
+    },
+    {
+      "id": "NG-A439",
+      "coder_b": "N2",
+      "coder_c": "D11"
+    },
+    {
+      "id": "NG-A450",
+      "coder_b": "D11",
+      "coder_c": "D2"
+    },
+    {
+      "id": "NG-A451",
+      "coder_b": "D2",
+      "coder_c": "D11"
+    },
+    {
+      "id": "RK-A009",
+      "coder_b": "D3",
+      "coder_c": "D11"
+    },
+    {
+      "id": "RK-A072",
+      "coder_b": "D12",
+      "coder_c": "D11"
+    },
+    {
+      "id": "RK-A103",
+      "coder_b": "D8",
+      "coder_c": "D2"
+    },
+    {
+      "id": "RK-A127",
+      "coder_b": "N1",
+      "coder_c": "D9"
+    },
+    {
+      "id": "RK-A220",
+      "coder_b": "D4",
+      "coder_c": "D7"
+    },
+    {
+      "id": "RK-A295",
+      "coder_b": "D3",
+      "coder_c": "D10"
+    },
+    {
+      "id": "RK-A297",
+      "coder_b": "D5",
+      "coder_c": "N2"
+    },
+    {
+      "id": "RK-A347",
+      "coder_b": "D12",
+      "coder_c": "D6"
+    },
+    {
+      "id": "RK-A370",
+      "coder_b": "D8",
+      "coder_c": "D7"
+    },
+    {
+      "id": "RK-A401",
+      "coder_b": "D8",
+      "coder_c": "D10"
+    },
+    {
+      "id": "UP-A003",
+      "coder_b": "D11",
+      "coder_c": "D2"
+    },
+    {
+      "id": "UP-A060",
+      "coder_b": "D12",
+      "coder_c": "D1"
+    },
+    {
+      "id": "UP-A068",
+      "coder_b": "D4",
+      "coder_c": "D11"
+    },
+    {
+      "id": "UP-A091",
+      "coder_b": "D12",
+      "coder_c": "D1"
+    },
+    {
+      "id": "UP-A141",
+      "coder_b": "D1",
+      "coder_c": "N2"
+    },
+    {
+      "id": "UP-A178",
+      "coder_b": "D2",
+      "coder_c": "D7"
+    },
+    {
+      "id": "UP-A190",
+      "coder_b": "D3",
+      "coder_c": "N2"
+    },
+    {
+      "id": "UP-A207",
+      "coder_b": "D2",
+      "coder_c": "N2"
+    }
+  ]
+}

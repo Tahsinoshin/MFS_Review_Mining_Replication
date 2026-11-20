@@ -1,0 +1,77 @@
+{
+  "computed_utc": "2026-10-31T20:22:06.612559+00:00",
+  "file": "data\\labels\\pilot_labels.csv",
+  "columns": [
+    "coder_b",
+    "coder_c"
+  ],
+  "excluded": [],
+  "ordinal_order": null,
+  "rows_total": 60,
+  "rows_used": 60,
+  "same_label": 54,
+  "observed_agreement": 0.9,
+  "chance_agreement": 0.1975,
+  "kappa": 0.8754,
+  "landis_koch_band": "almost perfect",
+  "label_counts": {
+    "coder_b": {
+      "N5": 8,
+      "D11": 4,
+      "D7": 4,
+      "D8": 4,
+      "N2": 4,
+      "D2": 22,
+      "D4": 2,
+      "D6": 1,
+      "D3": 1,
+      "D12": 6,
+      "D5": 4
+    },
+    "coder_c": {
+      "N5": 9,
+      "D11": 3,
+      "D7": 6,
+      "N2": 4,
+      "D2": 24,
+      "D1": 1,
+      "D8": 2,
+      "D4": 1,
+      "D3": 1,
+      "D12": 6,
+      "D5": 3
+    }
+  },
+  "disagreements": [
+    {
+      "id": "BK-P06",
+      "coder_b": "D8",
+      "coder_c": "D7"
+    },
+    {
+      "id": "BK-P10",
+      "coder_b": "D4",
+      "coder_c": "D1"
+    },
+    {
+      "id": "BK-P12",
+      "coder_b": "D6",
+      "coder_c": "D2"
+    },
+    {
+      "id": "NG-P06",
+      "coder_b": "D8",
+      "coder_c": "D7"
+    },
+    {
+      "id": "RK-P02",
+      "coder_b": "D11",
+      "coder_c": "N5"
+    },
+    {
+      "id": "UP-P07",
+      "coder_b": "D5",
+      "coder_c": "D2"
+    }
+  ]
+}

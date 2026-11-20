@@ -1,0 +1,169 @@
+{
+  "input": "data\\raw\\play_reviews_raw.csv",
+  "output": "data\\clean\\play_reviews_clean.csv",
+  "window_utc": [
+    "2024-10-20 00:00:00",
+    "2026-10-20 00:00:00"
+  ],
+  "rules": {
+    "min_words": 4,
+    "min_chars": 15,
+    "bangla_ratio_min": 0.8,
+    "latin_ratio_min": 0.8,
+    "romanized_min_hits": 2,
+    "romanized_min_share": 0.1,
+    "romanized_single_hit_share": 0.25,
+    "romanized_word_list_size": 286
+  },
+  "flow": [
+    {
+      "step": "raw (unique review IDs)",
+      "bkash/negative": 8060,
+      "bkash/positive": 39183,
+      "nagad/negative": 7027,
+      "nagad/positive": 26586,
+      "rocket/negative": 1077,
+      "rocket/positive": 3450,
+      "upay/negative": 320,
+      "upay/positive": 819,
+      "total": 86522
+    },
+    {
+      "step": "inside review window",
+      "bkash/negative": 8060,
+      "bkash/positive": 39183,
+      "nagad/negative": 7027,
+      "nagad/positive": 26586,
+      "rocket/negative": 1077,
+      "rocket/positive": 3450,
+      "upay/negative": 320,
+      "upay/positive": 819,
+      "total": 86522
+    },
+    {
+      "step": "non-empty text",
+      "bkash/negative": 8057,
+      "bkash/positive": 39157,
+      "nagad/negative": 7027,
+      "nagad/positive": 26584,
+      "rocket/negative": 1077,
+      "rocket/positive": 3450,
+      "upay/negative": 320,
+      "upay/positive": 819,
+      "total": 86491
+    },
+    {
+      "step": ">= 4 words and >= 15 characters",
+      "bkash/negative": 4447,
+      "bkash/positive": 6939,
+      "nagad/negative": 4011,
+      "nagad/positive": 3511,
+      "rocket/negative": 712,
+      "rocket/positive": 451,
+      "upay/negative": 262,
+      "upay/positive": 185,
+      "total": 20518
+    },
+    {
+      "step": "after removing duplicate texts",
+      "bkash/negative": 4420,
+      "bkash/positive": 6663,
+      "nagad/negative": 3983,
+      "nagad/positive": 3414,
+      "rocket/negative": 711,
+      "rocket/positive": 448,
+      "upay/negative": 262,
+      "upay/positive": 183,
+      "total": 20084
+    }
+  ],
+  "language_groups": [
+    {
+      "app": "bkash",
+      "polarity": "negative",
+      "n": 4420,
+      "bangla": 1425,
+      "english": 2519,
+      "mixed": 95,
+      "romanized": 381,
+      "other": 0
+    },
+    {
+      "app": "bkash",
+      "polarity": "positive",
+      "n": 6663,
+      "bangla": 2040,
+      "english": 4227,
+      "mixed": 87,
+      "romanized": 300,
+      "other": 9
+    },
+    {
+      "app": "nagad",
+      "polarity": "negative",
+      "n": 3983,
+      "bangla": 1511,
+      "english": 1957,
+      "mixed": 104,
+      "romanized": 411,
+      "other": 0
+    },
+    {
+      "app": "nagad",
+      "polarity": "positive",
+      "n": 3414,
+      "bangla": 1327,
+      "english": 1831,
+      "mixed": 35,
+      "romanized": 219,
+      "other": 2
+    },
+    {
+      "app": "rocket",
+      "polarity": "negative",
+      "n": 711,
+      "bangla": 219,
+      "english": 420,
+      "mixed": 21,
+      "romanized": 51,
+      "other": 0
+    },
+    {
+      "app": "rocket",
+      "polarity": "positive",
+      "n": 448,
+      "bangla": 146,
+      "english": 276,
+      "mixed": 8,
+      "romanized": 18,
+      "other": 0
+    },
+    {
+      "app": "upay",
+      "polarity": "negative",
+      "n": 262,
+      "bangla": 84,
+      "english": 161,
+      "mixed": 1,
+      "romanized": 16,
+      "other": 0
+    },
+    {
+      "app": "upay",
+      "polarity": "positive",
+      "n": 183,
+      "bangla": 54,
+      "english": 123,
+      "mixed": 0,
+      "romanized": 6,
+      "other": 0
+    }
+  ],
+  "redactions": {
+    "text:PHONE": 12,
+    "text:ID_NUMBER": 12,
+    "reply:ID_NUMBER": 21,
+    "reply:NAME": 1
+  },
+  "reviews_with_redaction": 20
+}

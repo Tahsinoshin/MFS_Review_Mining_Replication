@@ -1,0 +1,9 @@
+# Python 3.10+
+# google-play-scraper is pinned: scrape_play.py calls its request helpers directly
+# (see the note in that file), so check the scraper still works before upgrading.
+google-play-scraper==1.2.7
+pandas>=2.2
+numpy>=1.26
+openpyxl>=3.1
+python-dateutil>=2.9
+scipy>=1.11

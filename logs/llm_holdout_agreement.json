@@ -1,0 +1,73 @@
+{
+  "computed_utc": "2026-11-06T21:18:05.433566+00:00",
+  "file": "data/labels/llm/holdout_compare.csv",
+  "columns": [
+    "final",
+    "llm1"
+  ],
+  "excluded": [],
+  "ordinal_order": null,
+  "rows_total": 50,
+  "rows_used": 50,
+  "same_label": 45,
+  "observed_agreement": 0.9,
+  "chance_agreement": 0.1512,
+  "kappa": 0.8822,
+  "landis_koch_band": "almost perfect",
+  "label_counts": {
+    "final": {
+      "D2": 15,
+      "N2": 2,
+      "N5": 7,
+      "D11": 4,
+      "D8": 5,
+      "D12": 6,
+      "D7": 2,
+      "D5": 3,
+      "N1": 1,
+      "D4": 3,
+      "D6": 1,
+      "D1": 1
+    },
+    "llm1": {
+      "D2": 15,
+      "N2": 2,
+      "N5": 7,
+      "D5": 4,
+      "D8": 5,
+      "D12": 6,
+      "D7": 2,
+      "N1": 1,
+      "D4": 1,
+      "D11": 4,
+      "D1": 3
+    }
+  },
+  "disagreements": [
+    {
+      "id": "BK-A291",
+      "final": "D11",
+      "llm1": "D5"
+    },
+    {
+      "id": "RK-A347",
+      "final": "D6",
+      "llm1": "D12"
+    },
+    {
+      "id": "UP-A060",
+      "final": "D4",
+      "llm1": "D1"
+    },
+    {
+      "id": "UP-A068",
+      "final": "D4",
+      "llm1": "D11"
+    },
+    {
+      "id": "UP-A091",
+      "final": "D12",
+      "llm1": "D1"
+    }
+  ]
+}

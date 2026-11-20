@@ -1,0 +1,83 @@
+{
+ "note": "Final settled labels. Undisputed rows: both coders Y. Reasonable reading counts as correct.",
+ "spotcheck": {
+  "n": 160,
+  "primary_errors": 9,
+  "primary_error_pct": 5.6,
+  "primary_error_ci95_wilson": [
+   3.0,
+   10.3
+  ],
+  "primary_error_ids": [
+   "UP-A216",
+   "BK-A211",
+   "RK-A435",
+   "NG-A283",
+   "BK-A395",
+   "RK-A359",
+   "RK-A167",
+   "RK-A137",
+   "NG-A053"
+  ],
+  "changes": {
+   "D1->N2": 2,
+   "D7->N5": 4,
+   "D12->N5": 1,
+   "D1->D4": 1,
+   "N2->D2": 1
+  },
+  "severity_rows": 113,
+  "severity_errors": 1,
+  "severity_error_ids": [
+   "NG-A039"
+  ],
+  "design_primary_llm": 121,
+  "design_primary_final": 115,
+  "errors_by_llm_code": {
+   "D1": [
+    6,
+    3
+   ],
+   "D12": [
+    14,
+    1
+   ],
+   "D7": [
+    23,
+    4
+   ],
+   "N2": [
+    10,
+    1
+   ]
+  }
+ },
+ "targeted": {
+  "n": 43,
+  "primary_errors": 1,
+  "primary_error_pct": 2.3,
+  "primary_error_ci95_wilson": [
+   0.4,
+   12.1
+  ],
+  "primary_error_ids": [
+   "NG-A079"
+  ],
+  "changes": {
+   "D9->N3": 1
+  },
+  "severity_rows": 35,
+  "severity_errors": 1,
+  "severity_error_ids": [
+   "NG-A397"
+  ],
+  "design_primary_llm": 36,
+  "design_primary_final": 35,
+  "errors_by_llm_code": {
+   "D9": [
+    29,
+    1
+   ]
+  }
+ }
+}

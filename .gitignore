@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Review text is never committed. Running the pipeline or the LLM workflow creates
+# these files locally; keep them out of the repository.
+data/raw/*
+data/clean/*
+data/samples/*
+!data/samples/sample_membership.csv
+data/labels/llm/batches/
+data/labels/llm/raw/
+data/labels/llm/llm_labels_all.csv
+*.xlsx
+!data/**/.gitkeep
+
+# Per-run log files (they may name local paths)
+logs/*.log

@@ -1,0 +1,572 @@
+{
+  "created_utc": "2026-10-20T17:49:52.607649+00:00",
+  "seed": 20261020,
+  "input": {
+    "file": "data\\clean\\play_reviews_clean.csv",
+    "rows": 20084,
+    "sha256": "bda28fdb8f3adcce446079e923e8daf31f21f256552971ccaf4549f702d32413"
+  },
+  "settings": {
+    "pilot_per_app": 15,
+    "analysis_total": 1600,
+    "rebalance_shortfall": true,
+    "gold_per_app": 50,
+    "gold_min_per_lang_group": 5,
+    "gold_holdout_total": 50,
+    "contrast_per_app": 50,
+    "lang_check_per_app": 25
+  },
+  "analysis_available_after_pilot": {
+    "bkash": 4405,
+    "nagad": 3968,
+    "rocket": 696,
+    "upay": 247
+  },
+  "analysis_allocation": {
+    "bkash": 451,
+    "nagad": 451,
+    "rocket": 451,
+    "upay": 247
+  },
+  "gold_strata": {
+    "bkash": {
+      "available_in_analysis": {
+        "english": 244,
+        "bangla": 160,
+        "romanized": 38,
+        "mixed": 9
+      },
+      "allocated": {
+        "romanized": 5,
+        "mixed": 5,
+        "english": 24,
+        "bangla": 16
+      }
+    },
+    "nagad": {
+      "available_in_analysis": {
+        "english": 226,
+        "bangla": 174,
+        "romanized": 42,
+        "mixed": 9
+      },
+      "allocated": {
+        "romanized": 5,
+        "mixed": 5,
+        "english": 23,
+        "bangla": 17
+      }
+    },
+    "rocket": {
+      "available_in_analysis": {
+        "english": 277,
+        "bangla": 129,
+        "romanized": 28,
+        "mixed": 17
+      },
+      "allocated": {
+        "romanized": 5,
+        "mixed": 5,
+        "english": 27,
+        "bangla": 13
+      }
+    },
+    "upay": {
+      "available_in_analysis": {
+        "english": 150,
+        "bangla": 81,
+        "romanized": 15,
+        "mixed": 1
+      },
+      "allocated": {
+        "romanized": 5,
+        "mixed": 1,
+        "english": 29,
+        "bangla": 15
+      }
+    }
+  },
+  "gold_holdout_allocation": {
+    "bkash": 12,
+    "nagad": 13,
+    "rocket": 13,
+    "upay": 12
+  },
+  "sizes": [
+    {
+      "app": "bkash",
+      "clean 1-3* pool": 4420,
+      "clean 4-5* pool": 6663,
+      "pilot": 15,
+      "analysis": 451,
+      "gold": 50,
+      "gold tune": 38,
+      "gold holdout": 12,
+      "contrast": 50,
+      "lang check": 25
+    },
+    {
+      "app": "nagad",
+      "clean 1-3* pool": 3983,
+      "clean 4-5* pool": 3414,
+      "pilot": 15,
+      "analysis": 451,
+      "gold": 50,
+      "gold tune": 37,
+      "gold holdout": 13,
+      "contrast": 50,
+      "lang check": 25
+    },
+    {
+      "app": "rocket",
+      "clean 1-3* pool": 711,
+      "clean 4-5* pool": 448,
+      "pilot": 15,
+      "analysis": 451,
+      "gold": 50,
+      "gold tune": 37,
+      "gold holdout": 13,
+      "contrast": 50,
+      "lang check": 25
+    },
+    {
+      "app": "upay",
+      "clean 1-3* pool": 262,
+      "clean 4-5* pool": 183,
+      "pilot": 15,
+      "analysis": 247,
+      "gold": 50,
+      "gold tune": 38,
+      "gold holdout": 12,
+      "contrast": 50,
+      "lang check": 25
+    },
+    {
+      "app": "total",
+      "clean 1-3* pool": 9376,
+      "clean 4-5* pool": 10708,
+      "pilot": 60,
+      "analysis": 1600,
+      "gold": 200,
+      "gold tune": 150,
+      "gold holdout": 50,
+      "contrast": 200,
+      "lang check": 100
+    }
+  ],
+  "language_groups": [
+    {
+      "set": "1-3* pool",
+      "app": "bkash",
+      "n": 4420,
+      "bangla": 1425,
+      "english": 2519,
+      "mixed": 95,
+      "romanized": 381,
+      "other": 0
+    },
+    {
+      "set": "1-3* pool",
+      "app": "nagad",
+      "n": 3983,
+      "bangla": 1511,
+      "english": 1957,
+      "mixed": 104,
+      "romanized": 411,
+      "other": 0
+    },
+    {
+      "set": "1-3* pool",
+      "app": "rocket",
+      "n": 711,
+      "bangla": 219,
+      "english": 420,
+      "mixed": 21,
+      "romanized": 51,
+      "other": 0
+    },
+    {
+      "set": "1-3* pool",
+      "app": "upay",
+      "n": 262,
+      "bangla": 84,
+      "english": 161,
+      "mixed": 1,
+      "romanized": 16,
+      "other": 0
+    },
+    {
+      "set": "pilot",
+      "app": "bkash",
+      "n": 15,
+      "bangla": 3,
+      "english": 10,
+      "mixed": 0,
+      "romanized": 2,
+      "other": 0
+    },
+    {
+      "set": "pilot",
+      "app": "nagad",
+      "n": 15,
+      "bangla": 5,
+      "english": 8,
+      "mixed": 1,
+      "romanized": 1,
+      "other": 0
+    },
+    {
+      "set": "pilot",
+      "app": "rocket",
+      "n": 15,
+      "bangla": 3,
+      "english": 11,
+      "mixed": 1,
+      "romanized": 0,
+      "other": 0
+    },
+    {
+      "set": "pilot",
+      "app": "upay",
+      "n": 15,
+      "bangla": 3,
+      "english": 11,
+      "mixed": 0,
+      "romanized": 1,
+      "other": 0
+    },
+    {
+      "set": "gold",
+      "app": "bkash",
+      "n": 50,
+      "bangla": 16,
+      "english": 24,
+      "mixed": 5,
+      "romanized": 5,
+      "other": 0
+    },
+    {
+      "set": "gold",
+      "app": "nagad",
+      "n": 50,
+      "bangla": 17,
+      "english": 23,
+      "mixed": 5,
+      "romanized": 5,
+      "other": 0
+    },
+    {
+      "set": "gold",
+      "app": "rocket",
+      "n": 50,
+      "bangla": 13,
+      "english": 27,
+      "mixed": 5,
+      "romanized": 5,
+      "other": 0
+    },
+    {
+      "set": "gold",
+      "app": "upay",
+      "n": 50,
+      "bangla": 15,
+      "english": 29,
+      "mixed": 1,
+      "romanized": 5,
+      "other": 0
+    },
+    {
+      "set": "analysis",
+      "app": "bkash",
+      "n": 451,
+      "bangla": 160,
+      "english": 244,
+      "mixed": 9,
+      "romanized": 38,
+      "other": 0
+    },
+    {
+      "set": "analysis",
+      "app": "nagad",
+      "n": 451,
+      "bangla": 174,
+      "english": 226,
+      "mixed": 9,
+      "romanized": 42,
+      "other": 0
+    },
+    {
+      "set": "analysis",
+      "app": "rocket",
+      "n": 451,
+      "bangla": 129,
+      "english": 277,
+      "mixed": 17,
+      "romanized": 28,
+      "other": 0
+    },
+    {
+      "set": "analysis",
+      "app": "upay",
+      "n": 247,
+      "bangla": 81,
+      "english": 150,
+      "mixed": 1,
+      "romanized": 15,
+      "other": 0
+    },
+    {
+      "set": "contrast",
+      "app": "bkash",
+      "n": 50,
+      "bangla": 15,
+      "english": 32,
+      "mixed": 1,
+      "romanized": 2,
+      "other": 0
+    },
+    {
+      "set": "contrast",
+      "app": "nagad",
+      "n": 50,
+      "bangla": 23,
+      "english": 26,
+      "mixed": 0,
+      "romanized": 1,
+      "other": 0
+    },
+    {
+      "set": "contrast",
+      "app": "rocket",
+      "n": 50,
+      "bangla": 10,
+      "english": 35,
+      "mixed": 2,
+      "romanized": 3,
+      "other": 0
+    },
+    {
+      "set": "contrast",
+      "app": "upay",
+      "n": 50,
+      "bangla": 13,
+      "english": 36,
+      "mixed": 0,
+      "romanized": 1,
+      "other": 0
+    }
+  ],
+  "star_ratings": [
+    {
+      "set": "1-3* pool",
+      "app": "bkash",
+      "n": 4420,
+      "1*": 3364,
+      "2*": 499,
+      "3*": 557,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "1-3* pool",
+      "app": "nagad",
+      "n": 3983,
+      "1*": 3362,
+      "2*": 310,
+      "3*": 311,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "1-3* pool",
+      "app": "rocket",
+      "n": 711,
+      "1*": 564,
+      "2*": 67,
+      "3*": 80,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "1-3* pool",
+      "app": "upay",
+      "n": 262,
+      "1*": 201,
+      "2*": 26,
+      "3*": 35,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "pilot",
+      "app": "bkash",
+      "n": 15,
+      "1*": 11,
+      "2*": 4,
+      "3*": 0,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "pilot",
+      "app": "nagad",
+      "n": 15,
+      "1*": 13,
+      "2*": 1,
+      "3*": 1,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "pilot",
+      "app": "rocket",
+      "n": 15,
+      "1*": 12,
+      "2*": 1,
+      "3*": 2,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "pilot",
+      "app": "upay",
+      "n": 15,
+      "1*": 14,
+      "2*": 0,
+      "3*": 1,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "gold",
+      "app": "bkash",
+      "n": 50,
+      "1*": 41,
+      "2*": 4,
+      "3*": 5,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "gold",
+      "app": "nagad",
+      "n": 50,
+      "1*": 41,
+      "2*": 2,
+      "3*": 7,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "gold",
+      "app": "rocket",
+      "n": 50,
+      "1*": 40,
+      "2*": 6,
+      "3*": 4,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "gold",
+      "app": "upay",
+      "n": 50,
+      "1*": 34,
+      "2*": 6,
+      "3*": 10,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "analysis",
+      "app": "bkash",
+      "n": 451,
+      "1*": 348,
+      "2*": 48,
+      "3*": 55,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "analysis",
+      "app": "nagad",
+      "n": 451,
+      "1*": 377,
+      "2*": 27,
+      "3*": 47,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "analysis",
+      "app": "rocket",
+      "n": 451,
+      "1*": 358,
+      "2*": 36,
+      "3*": 57,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "analysis",
+      "app": "upay",
+      "n": 247,
+      "1*": 187,
+      "2*": 26,
+      "3*": 34,
+      "4*": 0,
+      "5*": 0
+    },
+    {
+      "set": "contrast",
+      "app": "bkash",
+      "n": 50,
+      "1*": 0,
+      "2*": 0,
+      "3*": 0,
+      "4*": 3,
+      "5*": 47
+    },
+    {
+      "set": "contrast",
+      "app": "nagad",
+      "n": 50,
+      "1*": 0,
+      "2*": 0,
+      "3*": 0,
+      "4*": 6,
+      "5*": 44
+    },
+    {
+      "set": "contrast",
+      "app": "rocket",
+      "n": 50,
+      "1*": 0,
+      "2*": 0,
+      "3*": 0,
+      "4*": 7,
+      "5*": 43
+    },
+    {
+      "set": "contrast",
+      "app": "upay",
+      "n": 50,
+      "1*": 0,
+      "2*": 0,
+      "3*": 0,
+      "4*": 4,
+      "5*": 46
+    }
+  ],
+  "checks": {
+    "pilot and analysis are disjoint": true,
+    "gold is inside analysis": true,
+    "pilot and gold are disjoint": true,
+    "no duplicate reviews within a set": true,
+    "pilot/analysis/gold are 1-3 stars": true,
+    "contrast is 4-5 stars": true,
+    "analysis matches its allocation": true,
+    "gold has 200 reviews": true,
+    "holdout has 50 reviews": true
+  }
+}

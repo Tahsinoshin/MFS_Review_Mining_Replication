@@ -1,0 +1,22 @@
+sample_id,sheet,to_settle,final_primary_correct,final_primary_code,final_severity_correct,final_severity
+NG-A039,spotcheck,severity,Y,,N,request
+NG-A116,spotcheck,primary,Y,,Y,
+BK-A210,spotcheck,primary,Y,,,
+UP-A216,spotcheck,primary,N,N2,,
+RK-A035,spotcheck,primary,Y,,,
+RK-A122,spotcheck,primary,Y,,,
+BK-A211,spotcheck,primary,N,N5,,
+RK-A435,spotcheck,primary,N,N5,,
+NG-A283,spotcheck,primary,N,N2,,
+BK-A395,spotcheck,primary and severity,N,D4,N,degrades
+RK-A258,spotcheck,severity,Y,,Y,
+RK-A359,spotcheck,primary,N,D2,N,blocks
+RK-A167,spotcheck,primary,N,N5,Y,
+NG-A384,spotcheck,primary,Y,,Y,
+RK-A137,spotcheck,primary,N,N5,,
+RK-A189,spotcheck,primary,Y,,Y,
+NG-A053,spotcheck,primary,N,N5,,
+BK-A107,targeted,severity,Y,,Y,
+NG-A275,targeted,primary,Y,,Y,
+NG-A079,targeted,primary,N,N3,,
+NG-A397,targeted,severity,Y,,N,annoyance

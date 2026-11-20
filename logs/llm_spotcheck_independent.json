@@ -1,0 +1,50 @@
+{
+ "spotcheck": {
+  "n": 160,
+  "primary_N_coder_b": 3,
+  "primary_N_coder_c": 12,
+  "primary_N_both": 0,
+  "primary_N_either": 15,
+  "primary_same_answer": 145,
+  "severity_answered_coder_b": 121,
+  "severity_answered_coder_c": 114,
+  "severity_N_coder_b": 1,
+  "severity_N_coder_c": 3
+ },
+ "targeted": {
+  "n": 43,
+  "primary_N_coder_b": 1,
+  "primary_N_coder_c": 1,
+  "primary_N_both": 0,
+  "primary_N_either": 2,
+  "primary_same_answer": 41,
+  "severity_answered_coder_b": 36,
+  "severity_answered_coder_c": 35,
+  "severity_N_coder_b": 2,
+  "severity_N_coder_c": 1
+ },
+ "rows_to_settle": 21,
+ "settle_ids": [
+  "NG-A039",
+  "NG-A116",
+  "BK-A210",
+  "UP-A216",
+  "RK-A035",
+  "RK-A122",
+  "BK-A211",
+  "RK-A435",
+  "NG-A283",
+  "BK-A395",
+  "RK-A258",
+  "RK-A359",
+  "RK-A167",
+  "NG-A384",
+  "RK-A137",
+  "RK-A189",
+  "NG-A053",
+  "BK-A107",
+  "NG-A275",
+  "NG-A079",
+  "NG-A397"
+ ]
+}
